@@ -1,34 +1,22 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.cartBox {
-  width: 70%;
-  display: flex;
-}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .cartBox {
+    width: 70%;
+    display: flex;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 640px) {
+  .App {
+    .cartBox {
+      width: 100%;
+      display: block;
+      margin: 15px;
+    }
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
